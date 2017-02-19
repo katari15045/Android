@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/myYellow"
+    tools:context="com.example.saketh.loginapp.MainActivity">
+
+    <ImageView
+        android:src="@drawable/user"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imageView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:hint="Name "
+        android:id="@+id/EditTextName"
+        android:textSize="20sp"
+        android:width="300dp"
+        android:layout_above="@+id/TextViewUsername"
+        android:layout_toEndOf="@+id/TextViewPassword" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+           <RadioGroup
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/RadioGroupOne">
+
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Male"
+                   android:id="@+id/RadioButtonMale"
+                   android:checked="false"
+                   android:layout_alignBottom="@+id/TextViewGender"
+                   android:layout_toEndOf="@+id/TextViewPassword" />
+
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Female"
+                   android:id="@+id/RadioButtonFemale"
+                   android:checked="false"
+                   android:layout_below="@+id/RadioButtonMale"
+                   android:layout_alignStart="@+id/RadioButtonMale" />
+
+           </RadioGroup>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:inputType="textEmailAddress"
+        android:hint="E Mail "
+        android:id="@+id/EditTextEMail"
+        android:width="300dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/RadioButtonFemale"
+        android:layout_alignStart="@+id/RadioButtonFemale" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="Username "
+        android:id="@+id/EditTextUsername"
+        android:textSize="20sp"
+        android:width="300dp"
+        android:layout_below="@+id/EditTextName"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="Password "
+        android:inputType="textPassword"
+        android:width="300dp"
+        android:ems="10"
+        android:id="@+id/EditTextPassword"
+        android:layout_below="@+id/TextViewUsername"
+        android:layout_alignStart="@+id/EditTextUsername" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:width="150dp"
+        android:text="Signup"
+        android:id="@+id/ButtonSignUp"
+        android:layout_below="@+id/TextViewEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp" />
+
+
+</LinearLayout>
