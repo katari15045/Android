@@ -1,0 +1,13 @@
+
+
+For 32-bit Linux - Android Studio Installation
+----------------------------------------------
+
+buildToolsVersion "23.0.3"
+buildToolsVersion > 23.0.3 ---- Not Working
+/home/saketh/Android/Sdk/build-tools
+
+platform-tools "23.0.1"
+platform-tools > "23.0.1" --- Not working 
+(http://askubuntu.com/questions/714653/adb-android-studio-ubuntu-error-unable-to-detect-adb-version-adb-output-hom)
+
