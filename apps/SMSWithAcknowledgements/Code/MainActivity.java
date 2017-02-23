@@ -1,4 +1,4 @@
-package com.example.root.simplesms;
+package com.example.root.smswithacknowledgements;
 
 import android.app.Activity;
 import android.app.PendingIntent;
