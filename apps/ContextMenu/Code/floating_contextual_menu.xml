@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <item
+        android:id="@+id/itemSoccer"
+        android:orderInCategory="1"
+        android:title="Soccer"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/itemTennis"
+        android:orderInCategory="2"
+        android:title="Tennis"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/itemBaseBall"
+        android:orderInCategory="3"
+        android:title="Baseball"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/itemBadminton"
+        android:orderInCategory="4"
+        android:title="Badminton"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/itemBasketBall"
+        android:orderInCategory="5"
+        android:title="BasketBall"
+        app:showAsAction="never"
+        />
+
+</menu>
