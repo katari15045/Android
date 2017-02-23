@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ValidateFields</string>
+    <string name="string_submission_valid">Successful!!!</string>
+    <string name="string_submission_invalid">Failed!!!</string>
+    <string name="string_galaxy_invalid">Galaxy can\'t be empty</string>
+    <string name="string_planet_invalid">Planet can\'t be empty</string>
+    <string name="string_continent_invalid">Continent can\'t be empty</string>
+    <string name="string_country_invalid">Country can\'t be empty</string>
+</resources>
