@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.root.floatinglabel.MainActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutGalaxy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextGalaxy"
+            android:hint="Galaxy"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutPlanet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextPlanet"
+            android:hint="Planet"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+   <android.support.design.widget.TextInputLayout
+       android:id="@+id/textInputLayoutContinent"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20px"
+       android:layout_marginLeft="20px"
+       android:layout_marginRight="20px"
+       >
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/editTextContinent"
+           android:hint="Continent"
+           />
+
+   </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextCountry"
+            android:hint="Country"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+</LinearLayout>
