@@ -14,6 +14,8 @@ import java.net.UnknownHostException;
 
 public class MainActivity extends AppCompatActivity
 {
+    EditText editTextIPAddress;
+    EditText editTextPortNumber;
     EditText editTextMessage;
     Button buttonSend;
 
@@ -23,6 +25,8 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        editTextIPAddress = (EditText) findViewById(R.id.editTextServerIP);
+        editTextPortNumber = (EditText) findViewById(R.id.editTextPortNumber);
         editTextMessage = (EditText) findViewById(R.id.editTextMessage);
         buttonSend = (Button) findViewById(R.id.buttonSend);
 
@@ -38,8 +42,8 @@ public class MainActivity extends AppCompatActivity
                 {
                     public  void  run()
                     {
-                        serverIPAddress = "192.168.56.134";
-                        portNumber = 7000;
+                        serverIPAddress = editTextIPAddress.getText().toString();
+                        portNumber = Integer.parseInt( editTextPortNumber.getText().toString() );
 
                         try
                         {
