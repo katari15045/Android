@@ -25,51 +25,48 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        editTextIPAddress = (EditText) findViewById(R.id.editTextServerIP);
-        editTextPortNumber = (EditText) findViewById(R.id.editTextPortNumber);
-        editTextMessage = (EditText) findViewById(R.id.editTextMessage);
-        buttonSend = (Button) findViewById(R.id.buttonSend);
+        initializeViews();
 
         buttonSend.setOnClickListener(new View.OnClickListener()
         {
             String serverIPAddress;
             int portNumber;
+            String message;
+
+            Thread thread;
+            RunnableThread runnableThread;
 
             @Override
             public void onClick(View v)
             {
-                Thread thread = new Thread()
-                {
-                    public  void  run()
-                    {
-                        serverIPAddress = editTextIPAddress.getText().toString();
-                        portNumber = Integer.parseInt( editTextPortNumber.getText().toString() );
-
-                        try
-                        {
-                            Socket socket = new Socket(serverIPAddress, portNumber);
-                            DataOutputStream dataOutputStream = new DataOutputStream( socket.getOutputStream() );
-                            dataOutputStream.writeUTF( editTextMessage.getText().toString() );
-                            dataOutputStream.flush();
-                            dataOutputStream.close();
-                            socket.close();
-                        }
-
-                        catch(UnknownHostException e)
-                        {
-                            e.printStackTrace();
-                        }
-
-                        catch(IOException e)
-                        {
-                            e.printStackTrace();
-                        }
-                    }
-                };
+                getInputFromUser();
+                initializeThread();
 
                 thread.start();
                 Toast.makeText(MainActivity.this, "Message Sent!", Toast.LENGTH_SHORT).show();
             }
+
+            private void getInputFromUser()
+            {
+                serverIPAddress = editTextIPAddress.getText().toString();
+                portNumber = Integer.parseInt( editTextPortNumber.getText().toString() );
+                message = editTextMessage.getText().toString();
+            }
+
+            private void initializeThread()
+            {
+                runnableThread = new RunnableThread(serverIPAddress, portNumber, message);
+                thread = new Thread(runnableThread);
+            }
         });
+    }
+
+    private void initializeViews()
+    {
+        editTextIPAddress = (EditText) findViewById(R.id.editTextServerIP);
+        editTextPortNumber = (EditText) findViewById(R.id.editTextPortNumber);
+        editTextMessage = (EditText) findViewById(R.id.editTextMessage);
+        buttonSend = (Button) findViewById(R.id.buttonSend);
+
     }
 }
