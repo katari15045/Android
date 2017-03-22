@@ -13,7 +13,9 @@
         android:id="@+id/botNavView"
         android:layout_gravity="bottom"
         design:menu="@menu/menu_item"
-        android:padding="0dp"
+        android:background="@color/gray"
+        design:itemIconTint="@color/violet"
+        design:itemTextColor="@color/violet"
         >
 
 
