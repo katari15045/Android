@@ -1,6 +1,7 @@
 package com.example.root.customappbar;
 
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.ActionBar;
@@ -48,13 +49,14 @@ public class MainActivity extends AppCompatActivity {
 
     private void customizeStatusBar()
     {
-        if (android.os.Build.VERSION.SDK_INT >= 21)
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
         {
-            Window window = this.getWindow();
+            Window window = getWindow();
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             window.setStatusBarColor(darkViolet);
         }
+
     }
 
     private void setBackgroundColor()
