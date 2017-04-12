@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="100"
+        android:title="About"/>
+
+    <item
+        android:id="@+id/contactUs"
+        android:title="Contact us"/>
+
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"/>
+
+    <item
+        android:id="@+id/help"
+        android:title="Help"/>
+
+    <item
+        android:id="@+id/siteMap"
+        android:title="Site Map"/>
+
+</menu>
