@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.sakethkatari.firebaseaccess.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idEditTextName"
+        android:background="@drawable/custom_edit_text"
+        android:hint="Name"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/white"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idEditTextAddress"
+        android:background="@drawable/custom_edit_text"
+        android:hint="Address"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/white"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idButtonSend"
+        android:background="@drawable/custom_button"
+        android:layout_marginTop="40dp"
+        android:text="Send"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        />
+
+</LinearLayout>

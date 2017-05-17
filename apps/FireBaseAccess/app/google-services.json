@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "496788109613",
+    "firebase_url": "https://fir-access-ccb9a.firebaseio.com",
+    "project_id": "fir-access-ccb9a",
+    "storage_bucket": "fir-access-ccb9a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:496788109613:android:4c1f30dfac740bd7",
+        "android_client_info": {
+          "package_name": "com.example.sakethkatari.firebaseaccess"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "496788109613-3hr2v2s6ngnic09hn67456shad25rcs5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sakethkatari.firebaseaccess",
+            "certificate_hash": "73d23629fe988f2ffcb748d8d92fc9942cafa554"
+          }
+        },
+        {
+          "client_id": "496788109613-knud3k99drldp69h75ef3j6r9qdr7t9s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0ajfTCDsYos5ZjM7DcdZxpipTdTsjZYg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "496788109613-knud3k99drldp69h75ef3j6r9qdr7t9s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
