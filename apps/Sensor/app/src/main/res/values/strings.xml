@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Sensor</string>
+    <string name="sensors">Sensors</string>
+    <string name="accelerometre">Accelerometre</string>
+    <string name="gyroscope">Gyroscope</string>
+    <string name="gps">GPS</string>
+    <string name="cell_id">Cell ID</string>
+    <string name="wifi">Wifi Access Points</string>
+    <string name="mic">Microphone</string>
+    <string name="start_tracking">Start Tracking</string>
+    <string name="stop_tracking">Stop Tracking</string>
+    <string name="export_data">Export Data</string>
+    <string name="flush_past_data">Flush past Data</string>
+    <string name="reading">Reading appears here</string>
+    <string name="post_export">Data written to a csv file!</string>
+    <string name="past_data_flushed">Past data deleted!</string>
+    <string name="no_data_to_flush">No data to flush!</string>
+    <string name="no_data_to_export">No data to export!</string>
+    <string name="no_sensor">Sensor is not present in your device!</string>
+    <string name="cant_write">Make sure the permission for writing to the storage is enabled!</string>
+    <string name="no_location_per">Make sure the permission for accessing location is enabled!</string>
+    <string name="no_location">Make sure the GPS is turned ON!</string>
+    <string name="no_record_audio">Make sure the permission for recording audio is enabled!</string>
+</resources>

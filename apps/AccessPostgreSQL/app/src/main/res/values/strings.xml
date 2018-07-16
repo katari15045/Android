@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AccessPostgreSQL</string>
+
+    <string name="ip">IP Address of DB</string>
+    <string name="port">Port of DB</string>
+    <string name="db_name">DB Name</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="command">Command</string>
+    <string name="query">Query</string>
+    <string name="update">Update</string>
+    <string name="execute">Execute</string>
+    <string name="pre_result">Result appears here</string>
+</resources>

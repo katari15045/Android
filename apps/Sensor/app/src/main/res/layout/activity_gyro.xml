@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_gyro_textview_data"
+        android:text="@string/gyroscope"
+        android:textColor="@color/white"
+        android:background="@drawable/textview_graphics"
+        android:padding="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_gyro_button_tracking"
+            android:text="@string/start_tracking"
+            android:textAllCaps="false"
+            android:background="@drawable/button_graphics"
+            android:textColor="@color/white"
+            android:padding="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_gyro_button_export"
+            android:text="@string/export_data"
+            android:textAllCaps="false"
+            android:background="@drawable/button_graphics"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:id="@+id/activity_gyro_imageview_delete"
+        android:clickable="true"
+        android:src="@drawable/ic_delete"
+        android:layout_marginTop="20dp"/>
+
+
+</LinearLayout>
